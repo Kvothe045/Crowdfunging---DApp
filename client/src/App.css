@@ -1,0 +1,96 @@
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.create-campaign-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.create-campaign-form input,
+.create-campaign-form button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.create-campaign-form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.create-campaign-form button:hover {
+  background-color: #45a049;
+}
+
+.campaigns-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.campaign {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.campaign-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.campaign-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.campaign-details {
+  padding: 15px;
+}
+
+.campaign-details h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.campaign-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.campaign-details form {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.campaign-details input {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.campaign-details button {
+  padding: 5px 10px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.campaign-details button:hover {
+  background-color: #007B9A;
+}
